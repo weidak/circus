@@ -11,12 +11,11 @@ public class Trainer {
 
         Duck d2 = (Duck) a; // downcasting
         getToSpeak(d2);
+        d2.fly();
+        d2.swim();
 
         train(new Duck());
-        // train(new Parrot());
-
-        Animal a2 = new Animal();
-        Bird b2 = new Bird();
+        train(new Parrot());
 
     }
 
@@ -25,7 +24,11 @@ public class Trainer {
     }
 
     private static void train(Bird bird) {
-        Duck d = (Duck) bird;
-        d.swim();
+
+        //this check removes the error to train the wrong bird
+        if (bird instanceof Duck) {
+            Duck d = (Duck) bird;
+            d.swim();
+        }
     }
 }
