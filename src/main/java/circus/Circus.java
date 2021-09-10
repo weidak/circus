@@ -9,8 +9,8 @@ import circus.stuff.Ladder;
 
 public class Circus {
     private static Animal[] animals = {
-//            new Duck("Drake"),
-//            new Parrot("Polly")
+            new Duck("Drake"),
+            new Parrot("Polly")
     };
     private static Equipment[] equipments = {
             new Ladder(50),

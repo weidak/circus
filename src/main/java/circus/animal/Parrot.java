@@ -15,4 +15,8 @@ public class Parrot extends Bird {
     public String toString() {
         return "I'm a parrot";
     }
+
+    public Parrot(String name) {
+        this.name = name;
+    }
 }

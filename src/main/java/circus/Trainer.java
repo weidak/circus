@@ -21,14 +21,9 @@ public class Trainer {
         d2.fly();
         d2.swim();
 
-<<<<<<< HEAD:src/main/java/circus/Trainer.java
-        train(new Duck());
-        train(new Parrot());
 
-=======
         train(new Duck("Daisy"));
         // train(new animal.Parrot());
->>>>>>> upstream/master:src/main/java/Trainer.java
     }
 
     private static void getToSpeak(Animal animal) {
@@ -36,11 +31,8 @@ public class Trainer {
     }
 
     private static void train(Bird bird) {
-<<<<<<< HEAD:src/main/java/circus/Trainer.java
 
         //this check removes the error to train the wrong bird
-=======
->>>>>>> upstream/master:src/main/java/Trainer.java
         if (bird instanceof Duck) {
             Duck d = (Duck) bird;
             d.swim();
